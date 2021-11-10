@@ -3,13 +3,13 @@
 
 #include "vaxcertreq.h"
 #include "bookvax.h"
-#include <QWidget>
+#include <QMainWindow>
 
 namespace Ui {
 class MainPage;
 }
 
-class MainPage : public QWidget
+class MainPage : public QMainWindow
 {
     Q_OBJECT
 
