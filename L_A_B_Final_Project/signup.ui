@@ -62,7 +62,7 @@
       <item>
        <widget class="QLabel" name="label_2">
         <property name="text">
-         <string>Username</string>
+         <string>E-mail</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -218,7 +218,7 @@
       <item>
        <widget class="QLabel" name="label_13">
         <property name="text">
-         <string>NHI NUmber</string>
+         <string>NHI Number</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
