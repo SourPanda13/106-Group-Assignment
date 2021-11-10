@@ -262,7 +262,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QRadioButton" name="radioButton_1stDose">
+       <widget class="QCheckBox" name="checkBox_firstdose">
         <property name="text">
          <string/>
         </property>
@@ -289,7 +289,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QRadioButton" name="radioButton_2ndDose">
+       <widget class="QCheckBox" name="checkBox_seconddose">
         <property name="text">
          <string/>
         </property>
@@ -316,7 +316,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QRadioButton" name="radioButton_TnC">
+       <widget class="QCheckBox" name="checkBox_tc">
         <property name="text">
          <string/>
         </property>
