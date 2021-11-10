@@ -4,7 +4,6 @@
 #include <QMainWindow>
 #include <QString>
 #include "mainpage.h"
-#include "admin_main.h"
 #include "adminmainpage.h"
 
 namespace Ui {
