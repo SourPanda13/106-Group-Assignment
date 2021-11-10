@@ -43,11 +43,11 @@ void SignUp::on_pushButton_clicked()
     QTextStream out(&userFile);
 
     out<<username<<","<<password<<","<<name<<","<<dob<<","<<id<<","<<nhi<<",";
-    if (ui->radioButton_1stDose->isChecked())
+    if (ui->checkBox_firstdose->isChecked())
     {
         out<<1<<Qt::endl;
     }
-    else if(ui->radioButton_2ndDose->isChecked())
+    else if(ui->checkBox_seconddose->isChecked())
     {
         out<<2<<Qt::endl;
     }

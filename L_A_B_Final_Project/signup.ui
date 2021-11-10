@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>376</width>
+    <width>414</width>
     <height>392</height>
    </rect>
   </property>
@@ -16,7 +16,7 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>160</x>
      <y>330</y>
      <width>111</width>
      <height>21</height>
@@ -29,7 +29,7 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>120</x>
      <y>0</y>
      <width>181</width>
      <height>41</height>
@@ -50,7 +50,7 @@
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>-110</x>
+     <x>-90</x>
      <y>50</y>
      <width>461</width>
      <height>275</height>
@@ -62,7 +62,7 @@
       <item>
        <widget class="QLabel" name="label_2">
         <property name="text">
-         <string>Username</string>
+         <string>E-mail</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -218,7 +218,7 @@
       <item>
        <widget class="QLabel" name="label_13">
         <property name="text">
-         <string>NHI NUmber</string>
+         <string>NHI Number</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -262,7 +262,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QRadioButton" name="radioButton_1stDose">
+       <widget class="QCheckBox" name="checkBox_firstdose">
         <property name="text">
          <string/>
         </property>
@@ -289,7 +289,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QRadioButton" name="radioButton_2ndDose">
+       <widget class="QCheckBox" name="checkBox_seconddose">
         <property name="text">
          <string/>
         </property>
@@ -316,7 +316,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QRadioButton" name="radioButton_TnC">
+       <widget class="QCheckBox" name="checkBox_tc">
         <property name="text">
          <string/>
         </property>
@@ -329,7 +329,7 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>230</x>
+     <x>250</x>
      <y>360</y>
      <width>141</width>
      <height>23</height>
