@@ -51,8 +51,8 @@ void login::on_pushButton_clicked()
             QMessageBox::information(this,"Success","Succesfully logged in as Admin");
             flag = true;
             hide();
-            am = new Adminmainpage(this);
-            am->show();
+            ah = new AdminHome(this);
+            ah->show();
             break;
         }
         else if(username==data.at(0) && password==data.at(1))

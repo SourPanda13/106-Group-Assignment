@@ -12,3 +12,11 @@ AdminHome::~AdminHome()
 {
     delete ui;
 }
+
+void AdminHome::on_pushButton_clicked()
+{
+    hide();
+    ul = new UserList(this);
+    ul->show();
+}
+

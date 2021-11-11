@@ -5,6 +5,7 @@
 #include <QString>
 #include "mainpage.h"
 #include "adminmainpage.h"
+#include "adminhome.h"
 
 namespace Ui {
 class login;
@@ -24,7 +25,7 @@ private slots:
 private:
     Ui::login *ui;
     MainPage *mp;
-    Adminmainpage *am;
+    AdminHome *ah;
 };
 
 class User
