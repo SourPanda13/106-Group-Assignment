@@ -52,3 +52,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     QR_Codes.qrc
+
+DISTFILES += \
+    ../../../../../../../Desktop/QR Code/Book vax.png \
+    QR Code/Book vax.png \
+    QR Code/Book vax.png
