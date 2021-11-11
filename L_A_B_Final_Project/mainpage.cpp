@@ -8,6 +8,8 @@ MainPage::MainPage(QWidget *parent) :
 {
     ui->setupUi(this);
 
+
+
 }
 
 MainPage::~MainPage()
