@@ -50,6 +50,7 @@ void login::on_pushButton_clicked()
         {
             QMessageBox::information(this,"Success","Succesfully logged in as Admin");
             flag = true;
+            hide();
             am = new Adminmainpage(this);
             am->show();
             break;
