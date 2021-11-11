@@ -3,6 +3,7 @@
 
 #include "vaxcertreq.h"
 #include "bookvax.h"
+#include "booktest.h"
 #include <QMainWindow>
 
 namespace Ui {
@@ -22,10 +23,13 @@ private slots:
 
     void on_BookVaccination_clicked();
 
+    void on_GetATest_clicked();
+
 private:
     Ui::MainPage *ui;
     VaxCertReq *vcr;
     BookVax *bv;
+    BookTest *bt;
 };
 
 #endif // MAINPAGE_H

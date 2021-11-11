@@ -27,3 +27,10 @@ void MainPage::on_RequestDigitalVaccineCertificate_clicked()
     vcr-> show();
 }
 
+
+void MainPage::on_GetATest_clicked()
+{
+    bt = new BookTest(this);
+    bt-> show();
+}
+
