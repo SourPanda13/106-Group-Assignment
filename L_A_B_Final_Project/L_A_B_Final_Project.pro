@@ -11,6 +11,7 @@ CONFIG += c++11
 SOURCES += \
     accountdetails.cpp \
     adminmainpage.cpp \
+    booktest.cpp \
     bookvax.cpp \
     contactus.cpp \
     login.cpp \
@@ -24,6 +25,7 @@ SOURCES += \
 HEADERS += \
     accountdetails.h \
     adminmainpage.h \
+    booktest.h \
     bookvax.h \
     contactus.h \
     login.h \
@@ -36,6 +38,7 @@ HEADERS += \
 FORMS += \
     accountdetails.ui \
     adminmainpage.ui \
+    booktest.ui \
     bookvax.ui \
     contactus.ui \
     login.ui \

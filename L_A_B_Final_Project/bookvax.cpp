@@ -7,11 +7,13 @@ BookVax::BookVax(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    QPixmap img("QR Code/Book vax.png");
+    QPixmap img(":/QRC/QR Code/Book vax.png");
     ui->label->setPixmap(img);
     int w = ui->label->width();
     int h = ui->label->height();
     ui->label->setPixmap(img.scaled(w, h, Qt::KeepAspectRatio));
+
+    //QImage *bookvax = new QImage(":/QRC/QR Code/Book vax.png");
 }
 
 BookVax::~BookVax()

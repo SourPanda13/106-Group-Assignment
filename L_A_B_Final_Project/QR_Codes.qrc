@@ -1,2 +1,6 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/QRC">
+        <file>QR Code/Book vax.png</file>
+        <file>QR Code/Get tested qr.PNG</file>
+    </qresource>
+</RCC>
