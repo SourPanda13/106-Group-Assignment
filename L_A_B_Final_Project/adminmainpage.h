@@ -15,6 +15,9 @@ public:
     explicit Adminmainpage(QWidget *parent = nullptr);
     ~Adminmainpage();
 
+private slots:
+    void on_LogOut_2_clicked();
+
 private:
     Ui::Adminmainpage *ui;
 };

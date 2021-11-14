@@ -59,6 +59,12 @@ void login::on_pushButton_clicked()
         {
             User user(QString (data.at(0)),QString (data.at(1)),QString (data.at(2)),QString (data.at(3)),QString (data.at(4)),QString (data.at(5)), data.at(6).toInt());
             QMessageBox::information(this,"Success","Succesfully logged in");
+            
+            QFile userFile("current_user.txt");
+            userFile.open(QIODevice::WriteOnly | QIODevice::Text);
+            QTextStream out(&userFile);
+                   
+            out<<data.at(0)<<","<<data.at(1)<<","<<data.at(2)<<","<<data.at(3)<<","<<data.at(4)<<","<<data.at(5)<<","<<data.at(6)<<Qt::endl;
 
             hide();
             mp= new MainPage(this);

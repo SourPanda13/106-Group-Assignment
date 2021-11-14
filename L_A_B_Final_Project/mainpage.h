@@ -25,6 +25,8 @@ private slots:
 
     void on_GetATest_clicked();
 
+    void on_LogOut_clicked();
+
 private:
     Ui::MainPage *ui;
     VaxCertReq *vcr;
