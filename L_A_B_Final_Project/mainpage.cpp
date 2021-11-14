@@ -69,3 +69,9 @@ void MainPage::on_LogOut_clicked()
     mw->show();
 }
 
+void MainPage::on_ViewAccountDetails_clicked()
+{
+   ad= new AccountDetails(this);
+   ad->show();
+
+}

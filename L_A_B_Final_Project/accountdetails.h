@@ -14,7 +14,8 @@ class AccountDetails : public QWidget
 public:
     explicit AccountDetails(QWidget *parent = nullptr);
     ~AccountDetails();
-
+private slots:
+    void on_pushButton_clicked();
 private:
     Ui::AccountDetails *ui;
 };
