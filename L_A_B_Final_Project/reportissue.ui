@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Report an Issue</string>
+   <string>Report An Issue</string>
   </property>
   <widget class="QPushButton" name="pushButton_submit">
    <property name="geometry">
