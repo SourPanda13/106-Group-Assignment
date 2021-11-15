@@ -18,6 +18,8 @@ public:
 private slots:
     void on_LogOut_2_clicked();
 
+    void on_GetATest_2_clicked();
+
 private:
     Ui::Adminmainpage *ui;
 };

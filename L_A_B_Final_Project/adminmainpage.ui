@@ -217,6 +217,18 @@ p, li { white-space: pre-wrap; }
       </property>
      </widget>
     </item>
+    <item>
+     <widget class="QPushButton" name="GetATest_2">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Delete Account</string>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QPushButton" name="LogOut_2">
