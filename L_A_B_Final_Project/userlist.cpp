@@ -46,7 +46,7 @@ void UserList::on_pushButton_clicked()
 
         if(data.at(0) == username)
         {
-            QFile currentUserFile("currentuser.txt");
+            QFile currentUserFile("current_user.txt");
             currentUserFile.open(QIODevice::WriteOnly | QIODevice::Text);
             QTextStream out(&currentUserFile);
 
