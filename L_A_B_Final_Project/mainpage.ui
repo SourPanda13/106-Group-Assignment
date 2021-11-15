@@ -127,6 +127,18 @@ p, li { white-space: pre-wrap; }
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
+     <widget class="QPushButton" name="NHIQRCodeDisplay">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>View QR Code</string>
+      </property>
+     </widget>
+    </item>
+    <item>
      <widget class="QPushButton" name="BookVaccination">
       <property name="font">
        <font>
@@ -240,24 +252,6 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="text">
     <string>Log Out</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="NHIQRCodeDisplay">
-   <property name="geometry">
-    <rect>
-     <x>740</x>
-     <y>10</y>
-     <width>231</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>20</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>View NHI Number</string>
    </property>
   </widget>
   <widget class="QLabel" name="FullNameDisplay">
