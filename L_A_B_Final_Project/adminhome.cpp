@@ -20,3 +20,11 @@ void AdminHome::on_pushButton_clicked()
     ul->show();
 }
 
+
+void AdminHome::on_pushButton_2_clicked()
+{
+    ar = new AdminReports(this);
+    this->hide();
+    ar->show();
+}
+

@@ -24,7 +24,7 @@ Adminmainpage::Adminmainpage(QWidget *parent) :
         ui->Dose1Confirmation->setText("Confirmed");
         ui->Dose2Confirmation->setText("Confirmed");
     }
-    else if (data.at(6)=="2")
+    else if (data.at(6)=="1")
     {
         ui->Dose1Confirmation->setText("Confirmed");
         ui->Dose2Confirmation->setText("Unconfirmed");

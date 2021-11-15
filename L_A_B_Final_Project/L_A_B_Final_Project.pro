@@ -12,6 +12,7 @@ SOURCES += \
     accountdetails.cpp \
     adminhome.cpp \
     adminmainpage.cpp \
+    adminreports.cpp \
     booktest.cpp \
     bookvax.cpp \
     contactus.cpp \
@@ -28,6 +29,7 @@ HEADERS += \
     accountdetails.h \
     adminhome.h \
     adminmainpage.h \
+    adminreports.h \
     booktest.h \
     bookvax.h \
     contactus.h \
@@ -43,6 +45,7 @@ FORMS += \
     accountdetails.ui \
     adminhome.ui \
     adminmainpage.ui \
+    adminreports.ui \
     booktest.ui \
     bookvax.ui \
     contactus.ui \

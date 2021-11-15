@@ -16,6 +16,11 @@ public:
     ~ReportIssue();
 
 
+private slots:
+    void on_pushButton_back_clicked();
+
+    void on_pushButton_submit_clicked();
+
 private:
     Ui::ReportIssue *ui;
 };

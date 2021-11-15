@@ -32,6 +32,8 @@ User::User(QString username,QString pass, QString name, QString dob, QString id,
 
 void login::on_pushButton_clicked()
 {
+
+
     QString username = ui->lineEdit->text();
     QString password= ui->lineEdit_7->text();
 

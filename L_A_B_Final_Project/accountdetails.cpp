@@ -24,8 +24,6 @@ AccountDetails::AccountDetails(QWidget *parent) :
     ui->EmailLabel->setText(data.at(0));
 
 
-
-
 }
 
 AccountDetails::~AccountDetails()

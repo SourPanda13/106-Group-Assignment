@@ -30,37 +30,44 @@ void SignUp::on_pushButton_2_clicked()
 
 void SignUp::on_pushButton_clicked()
 {
-    QString username = ui->lineEdit_Username->text();
-    QString password= ui->lineEdit_Password->text();
-    QString name = ui->lineEdit_Name->text();
-    QString dob = ui->lineEdit_DOB->text();
-    QString id = ui->lineEdit_ID->text();
-    QString nhi = ui->lineEdit_NHI->text();
-
-
-    QFile userFile("user.txt");
-    userFile.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Append);
-    QTextStream out(&userFile);
-
-    out<<username<<","<<password<<","<<name<<","<<dob<<","<<id<<","<<nhi<<",";
-    if(ui->checkBox_seconddose->isChecked())
+    if(ui->checkBox_tc->isChecked())
     {
-        out<<2<<Qt::endl;
-    }
-    else if (ui->checkBox_firstdose->isChecked())
-    {
-        out<<1<<Qt::endl;
-    }
+        QString username = ui->lineEdit_Username->text();
+        QString password= ui->lineEdit_Password->text();
+        QString name = ui->lineEdit_Name->text();
+        QString dob = ui->lineEdit_DOB->text();
+        QString id = ui->lineEdit_ID->text();
+        QString nhi = ui->lineEdit_NHI->text();
 
+
+        QFile userFile("user.txt");
+        userFile.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Append);
+        QTextStream out(&userFile);
+
+        out<<username<<","<<password<<","<<name<<","<<dob<<","<<id<<","<<nhi<<",";
+        if(ui->checkBox_seconddose->isChecked())
+        {
+            out<<2<<Qt::endl;
+        }
+        else if (ui->checkBox_firstdose->isChecked())
+        {
+            out<<1<<Qt::endl;
+        }
+
+        else
+        {
+            out<<0<<Qt::endl;
+        }
+
+        QMessageBox::information(this,"Account created","Your account has been created");
+
+        hide();
+        li= new login(this);
+        li->show();
+    }
     else
     {
-        out<<0<<Qt::endl;
+        QMessageBox::information(this,"Error","You must accept the terms and conditions");
     }
-
-    QMessageBox::information(this,"Account created","Your account has been created");
-
-    hide();
-    li= new login(this);
-    li->show();
 }
 

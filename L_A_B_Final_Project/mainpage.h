@@ -5,6 +5,7 @@
 #include "bookvax.h"
 #include "booktest.h"
 #include "accountdetails.h"
+#include "reportissue.h"
 #include <QMainWindow>
 
 namespace Ui {
@@ -29,12 +30,15 @@ private slots:
     void on_LogOut_clicked();
 
      void on_ViewAccountDetails_clicked();
+     void on_RequestDigitalVaccineCertificate_2_clicked();
+
 private:
     Ui::MainPage *ui;
     VaxCertReq *vcr;
     BookVax *bv;
     BookTest *bt;
     AccountDetails *ad;
+    ReportIssue *ri;
 };
 
 #endif // MAINPAGE_H

@@ -75,3 +75,11 @@ void MainPage::on_ViewAccountDetails_clicked()
    ad->show();
 
 }
+
+void MainPage::on_RequestDigitalVaccineCertificate_2_clicked()
+{
+    ri = new ReportIssue(this);
+    this->hide();
+    ri->show();
+}
+
