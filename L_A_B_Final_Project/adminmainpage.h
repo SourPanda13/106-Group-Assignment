@@ -20,6 +20,12 @@ private slots:
 
     void on_GetATest_2_clicked();
 
+    void on_BookVaccination_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::Adminmainpage *ui;
 };

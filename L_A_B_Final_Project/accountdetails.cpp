@@ -6,6 +6,7 @@
 #include <QString>
 #include <QMessageBox>
 
+
 AccountDetails::AccountDetails(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::AccountDetails)

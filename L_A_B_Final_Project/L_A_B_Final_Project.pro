@@ -10,6 +10,7 @@ CONFIG += c++11
 
 SOURCES += \
     accountdetails.cpp \
+    adminaccountdetails.cpp \
     adminhome.cpp \
     adminmainpage.cpp \
     adminreports.cpp \
@@ -27,6 +28,7 @@ SOURCES += \
 
 HEADERS += \
     accountdetails.h \
+    adminaccountdetails.h \
     adminhome.h \
     adminmainpage.h \
     adminreports.h \
@@ -43,6 +45,7 @@ HEADERS += \
 
 FORMS += \
     accountdetails.ui \
+    adminaccountdetails.ui \
     adminhome.ui \
     adminmainpage.ui \
     adminreports.ui \
