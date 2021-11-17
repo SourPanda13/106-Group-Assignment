@@ -122,7 +122,7 @@ p, li { white-space: pre-wrap; }
      <x>590</x>
      <y>160</y>
      <width>350</width>
-     <height>291</height>
+     <height>308</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -159,6 +159,30 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="text">
        <string>Get a Covid-19 Test</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="GetATest_2">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Enter Covid-19 Test Results </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="RequestDigitalVaccineCertificate_3">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Veiw Test Results</string>
       </property>
      </widget>
     </item>

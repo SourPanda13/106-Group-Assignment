@@ -47,16 +47,16 @@ void SignUp::on_pushButton_clicked()
         out<<username<<","<<password<<","<<name<<","<<dob<<","<<id<<","<<nhi<<",";
         if(ui->checkBox_seconddose->isChecked())
         {
-            out<<2<<Qt::endl;
+            out<<2<<","<<""<<Qt::endl;
         }
         else if (ui->checkBox_firstdose->isChecked())
         {
-            out<<1<<Qt::endl;
+            out<<1<<","<<""<<Qt::endl;
         }
 
         else
         {
-            out<<0<<Qt::endl;
+            out<<0<<","<<""<<Qt::endl;
         }
 
         QMessageBox::information(this,"Account created","Your account has been created");

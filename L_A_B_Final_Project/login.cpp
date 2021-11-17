@@ -66,7 +66,7 @@ void login::on_pushButton_clicked()
             userFile.open(QIODevice::WriteOnly | QIODevice::Text);
             QTextStream out(&userFile);
                    
-            out<<data.at(0)<<","<<data.at(1)<<","<<data.at(2)<<","<<data.at(3)<<","<<data.at(4)<<","<<data.at(5)<<","<<data.at(6)<<Qt::endl;
+            out<<data.at(0)<<","<<data.at(1)<<","<<data.at(2)<<","<<data.at(3)<<","<<data.at(4)<<","<<data.at(5)<<","<<data.at(6)<<","<<data.at(7)<<Qt::endl;
 
             hide();
             mp= new MainPage(this);

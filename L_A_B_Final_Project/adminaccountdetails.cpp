@@ -78,7 +78,7 @@ void AdminAccountDetails::on_pushButton_save_clicked()
     }
 
 
-    file += (ui->lineEdit_Email->text()+","+data_.at(1)+","+ui->lineEdit_Name->text()+","+data_.at(3)+","+data_.at(4)+","+ui->lineEdit_NHI->text()+","+data_.at(6)+"\n");
+    file += (ui->lineEdit_Email->text()+","+data_.at(1)+","+ui->lineEdit_Name->text()+","+data_.at(3)+","+data_.at(4)+","+ui->lineEdit_NHI->text()+","+data_.at(6)+","+data_.at(7)+"\n");
 
     currentUserFile.close();
 
@@ -86,7 +86,7 @@ void AdminAccountDetails::on_pushButton_save_clicked()
     currentUserFileOut.open(QIODevice::WriteOnly | QIODevice::Text);
     QTextStream Out(&currentUserFileOut);
 
-    Out<<(ui->lineEdit_Email->text()+","+data_.at(1)+","+ui->lineEdit_Name->text()+","+data_.at(3)+","+data_.at(4)+","+ui->lineEdit_NHI->text()+","+data_.at(6)+"\n");
+    Out<<(ui->lineEdit_Email->text()+","+data_.at(1)+","+ui->lineEdit_Name->text()+","+data_.at(3)+","+data_.at(4)+","+ui->lineEdit_NHI->text()+","+data_.at(6)+","+data_.at(7)+"\n");
 
     int j = 0;
 

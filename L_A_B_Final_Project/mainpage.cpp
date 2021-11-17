@@ -83,3 +83,24 @@ void MainPage::on_RequestDigitalVaccineCertificate_2_clicked()
     ri->show();
 }
 
+
+void MainPage::on_GetATest_2_clicked()
+{
+    ti = new TestInput(this);
+    ti->show();
+}
+
+
+void MainPage::on_RequestDigitalVaccineCertificate_3_clicked()
+{
+    tv = new TestView(this);
+    tv->show();
+}
+
+
+void MainPage::on_NHIQRCodeDisplay_clicked()
+{
+    qr = new UserQRCode(this);
+    qr->show();
+}
+

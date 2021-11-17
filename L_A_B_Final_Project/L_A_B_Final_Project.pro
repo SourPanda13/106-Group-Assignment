@@ -23,7 +23,10 @@ SOURCES += \
     mainwindow.cpp \
     reportissue.cpp \
     signup.cpp \
+    testinput.cpp \
+    testview.cpp \
     userlist.cpp \
+    userqrcode.cpp \
     vaxcertreq.cpp
 
 HEADERS += \
@@ -40,7 +43,10 @@ HEADERS += \
     mainwindow.h \
     reportissue.h \
     signup.h \
+    testinput.h \
+    testview.h \
     userlist.h \
+    userqrcode.h \
     vaxcertreq.h
 
 FORMS += \
@@ -57,7 +63,10 @@ FORMS += \
     mainwindow.ui \
     reportissue.ui \
     signup.ui \
+    testinput.ui \
+    testview.ui \
     userlist.ui \
+    userqrcode.ui \
     vaxcertreq.ui
 
 # Default rules for deployment.

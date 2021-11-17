@@ -50,7 +50,7 @@ void UserList::on_pushButton_clicked()
             currentUserFile.open(QIODevice::WriteOnly | QIODevice::Text);
             QTextStream out(&currentUserFile);
 
-            out<<data.at(0)<<","<<data.at(1)<<","<<data.at(2)<<","<<data.at(3)<<","<<data.at(4)<<","<<data.at(5)<<","<<data.at(6)<<","<<Qt::endl;
+            out<<data.at(0)<<","<<data.at(1)<<","<<data.at(2)<<","<<data.at(3)<<","<<data.at(4)<<","<<data.at(5)<<","<<data.at(6)<<","<<data.at(7)<<Qt::endl;
 
             break;
         }
