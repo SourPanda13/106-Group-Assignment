@@ -39,31 +39,55 @@ void SignUp::on_pushButton_clicked()
         QString id = ui->lineEdit_ID->text();
         QString nhi = ui->lineEdit_NHI->text();
 
+        QFile userFileIn("user.txt");
+        userFileIn.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream in(&userFileIn);
 
-        QFile userFile("user.txt");
-        userFile.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Append);
-        QTextStream out(&userFile);
+        bool flag = false;
 
-        out<<username<<","<<password<<","<<name<<","<<dob<<","<<id<<","<<nhi<<",";
-        if(ui->checkBox_seconddose->isChecked())
+        while(!in.atEnd())
         {
-            out<<2<<","<<""<<Qt::endl;
-        }
-        else if (ui->checkBox_firstdose->isChecked())
-        {
-            out<<1<<","<<""<<Qt::endl;
+            QString line = in.readLine();
+            QStringList data= line.split(",");
+
+            if (data.at(0) == username)
+            {
+                flag = true;
+            }
         }
 
+        if(flag)
+        {
+            QMessageBox::warning(this,"Error","There is already an account registered with this email address");
+        }
         else
         {
-            out<<0<<","<<""<<Qt::endl;
+            QFile userFile("user.txt");
+            userFile.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Append);
+            QTextStream out(&userFile);
+
+            out<<username<<","<<password<<","<<name<<","<<dob<<","<<id<<","<<nhi<<",";
+            if(ui->checkBox_seconddose->isChecked())
+            {
+                out<<2<<","<<""<<Qt::endl;
+            }
+            else if (ui->checkBox_firstdose->isChecked())
+            {
+                out<<1<<","<<""<<Qt::endl;
+            }
+
+            else
+            {
+                out<<0<<","<<""<<Qt::endl;
+            }
+
+            QMessageBox::information(this,"Account created","Your account has been created");
+
+            hide();
+            li= new login(this);
+            li->show();
         }
 
-        QMessageBox::information(this,"Account created","Your account has been created");
-
-        hide();
-        li= new login(this);
-        li->show();
     }
     else
     {

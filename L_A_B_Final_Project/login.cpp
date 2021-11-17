@@ -78,7 +78,7 @@ void login::on_pushButton_clicked()
      }
     if (!flag)
     {
-        QMessageBox::information(this,"Login Failed","Incorrect Username or Password");
+        QMessageBox::critical(this,"Login Failed","Incorrect Username or Password");
     }
 
 }
