@@ -3,6 +3,7 @@
 #include <mainpage.h>
 #include <QFile>
 #include <QMessageBox>
+#include <QDateTime>
 
 ReportIssue::ReportIssue(QWidget *parent) :
     QDialog(parent),
@@ -55,5 +56,13 @@ void ReportIssue::on_pushButton_submit_clicked()
     this->hide();
     mp->show();
 
+    QFile log("reportlog.txt");
+    log.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Append);
+    QTextStream l_out(&log);
+
+    QDate date = QDate::currentDate();
+    QTime time = QTime::currentTime();
+
+    l_out << data.at(0) << "," << date.toString() << "," << time.toString() << Qt::endl;
 }
 

@@ -200,6 +200,7 @@ void Adminmainpage::on_pushButton_clicked()
     ui->pushButton->hide();
 
     QMessageBox::information(this,"Complete","Vaccine status has been updated");
+
 }
 
 
@@ -281,6 +282,7 @@ void Adminmainpage::on_pushButton_2_clicked()
     ui->pushButton_2->hide();
 
     QMessageBox::information(this,"Complete","Vaccine status has been updated");
+
 }
 
 void Adminmainpage::on_GetATest_clicked()
@@ -386,11 +388,6 @@ void Adminmainpage::on_NHIQRCodeDisplay_clicked()
     QTextStream FileOut(&userFileOut);
 
     FileOut<<file;
-    ui->Dose1Confirmation->setText("Confirmed");
-    ui->Dose2Confirmation->setText("Confirmed");
-    ui->pushButton_2->hide();
-
-    QMessageBox::information(this,"Complete","Vaccine status has been updated");
 }
 
 

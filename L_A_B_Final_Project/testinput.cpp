@@ -4,6 +4,7 @@
 #include<QFile>
 #include<QMessageBox>
 #include<QString>
+#include<QDateTime>
 
 TestInput::TestInput(QWidget *parent) :
     QDialog(parent),
@@ -32,6 +33,15 @@ void TestInput::on_buttonBox_accepted()
     QTextStream out(&testFile);
 
     out<<data.at(0)<<","<<ui->dateEdit->date().toString()<<","<<ui->comboBox->currentText()<<Qt::endl;
+
+    QFile log("testlog.txt");
+    log.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Append);
+    QTextStream l_out(&log);
+
+    QDate date = QDate::currentDate();
+    QTime time = QTime::currentTime();
+
+    l_out << data.at(0) << "," << date.toString() << "," << time.toString() << Qt::endl;
 
     //Would add a QMessageBox here but for some reason doing that causes the program to terminate
 
