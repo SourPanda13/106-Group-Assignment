@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Admin</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(241, 248, 253);</string>
+  </property>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
@@ -26,6 +29,9 @@
     <font>
      <pointsize>20</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);</string>
    </property>
    <property name="text">
     <string>Covid-19 Vaccination Record</string>
@@ -45,8 +51,8 @@
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Pfizer BioNtech&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Dose 2 - &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#002e6e;&quot;&gt;Pfizer BioNtech&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#002e6e;&quot;&gt;Dose 2 - &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextEdit" name="Dose1Box">
@@ -63,16 +69,16 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Pfizer BioNtech&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Dose 1 - &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#002e6e;&quot;&gt;Pfizer BioNtech&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#002e6e;&quot;&gt;Dose 1 - &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QLabel" name="FullNameDisplay">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>20</y>
-     <width>461</width>
+     <x>380</x>
+     <y>40</y>
+     <width>211</width>
      <height>41</height>
     </rect>
    </property>
@@ -83,6 +89,10 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(241, 248, 253);
+color: rgb(0, 46, 110);</string>
    </property>
    <property name="text">
     <string/>
@@ -100,6 +110,9 @@ p, li { white-space: pre-wrap; }
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);</string>
+   </property>
    <property name="text">
     <string>Update</string>
    </property>
@@ -107,7 +120,7 @@ p, li { white-space: pre-wrap; }
   <widget class="QLabel" name="Dose1Confirmation">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>120</x>
      <y>120</y>
      <width>351</width>
      <height>21</height>
@@ -117,6 +130,10 @@ p, li { white-space: pre-wrap; }
     <font>
      <pointsize>16</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);
+background-color: rgb(241, 248, 253);</string>
    </property>
    <property name="text">
     <string/>
@@ -135,6 +152,10 @@ p, li { white-space: pre-wrap; }
     <font>
      <pointsize>16</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);
+background-color: rgb(241, 248, 253);</string>
    </property>
    <property name="text">
     <string/>
@@ -167,6 +188,9 @@ p, li { white-space: pre-wrap; }
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);</string>
+   </property>
    <property name="text">
     <string>Update</string>
    </property>
@@ -188,6 +212,9 @@ p, li { white-space: pre-wrap; }
         <pointsize>12</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 46, 110);</string>
+      </property>
       <property name="text">
        <string>Modify Account Details</string>
       </property>
@@ -199,6 +226,9 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>12</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 46, 110);</string>
       </property>
       <property name="text">
        <string>Upload User QR Code</string>
@@ -212,6 +242,9 @@ p, li { white-space: pre-wrap; }
         <pointsize>12</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 46, 110);</string>
+      </property>
       <property name="text">
        <string>View Test History</string>
       </property>
@@ -223,6 +256,9 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>12</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 46, 110);</string>
       </property>
       <property name="text">
        <string>Delete Account</string>
@@ -244,6 +280,9 @@ p, li { white-space: pre-wrap; }
     <font>
      <pointsize>14</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);</string>
    </property>
    <property name="text">
     <string>Log Out</string>
