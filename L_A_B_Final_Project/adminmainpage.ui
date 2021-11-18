@@ -261,7 +261,7 @@ background-color: rgb(241, 248, 253);</string>
        <string notr="true">color: rgb(0, 46, 110);</string>
       </property>
       <property name="text">
-       <string>View Test History</string>
+       <string>Enter Covid Test Result</string>
       </property>
      </widget>
     </item>
