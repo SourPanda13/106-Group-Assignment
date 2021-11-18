@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Report An Issue</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(241, 248, 253);</string>
+  </property>
   <widget class="QPushButton" name="pushButton_submit">
    <property name="geometry">
     <rect>
@@ -21,6 +24,10 @@
      <width>121</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 46, 110);</string>
    </property>
    <property name="text">
     <string>Submit</string>
@@ -39,6 +46,9 @@
     <font>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);</string>
    </property>
    <property name="text">
     <string>Report an Issue</string>
@@ -62,6 +72,9 @@
      <width>121</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);</string>
    </property>
    <property name="text">
     <string>Back</string>

@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>User List</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(241, 248, 253);</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -26,6 +29,9 @@
     <font>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);</string>
    </property>
    <property name="text">
     <string>Please Select A User</string>
@@ -49,6 +55,10 @@
      <width>80</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 46, 110);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>Select User</string>

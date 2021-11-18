@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Sign Up</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(241, 248, 253);</string>
+  </property>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
@@ -21,6 +24,10 @@
      <width>111</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 46, 110);</string>
    </property>
    <property name="text">
     <string>Create Account</string>
@@ -39,6 +46,9 @@
     <font>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);</string>
    </property>
    <property name="text">
     <string>Create An Account</string>
@@ -61,6 +71,9 @@
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 46, 110);</string>
+        </property>
         <property name="text">
          <string>E-mail</string>
         </property>
@@ -91,6 +104,9 @@
      <layout class="QHBoxLayout" name="horizontalLayout_7">
       <item>
        <widget class="QLabel" name="label_8">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 46, 110);</string>
+        </property>
         <property name="text">
          <string>Password</string>
         </property>
@@ -121,6 +137,9 @@
      <layout class="QHBoxLayout" name="horizontalLayout_8">
       <item>
        <widget class="QLabel" name="label_9">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 46, 110);</string>
+        </property>
         <property name="text">
          <string>Full Name</string>
         </property>
@@ -157,6 +176,9 @@
      <layout class="QHBoxLayout" name="horizontalLayout_11">
       <item>
        <widget class="QLabel" name="label_15">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 46, 110);</string>
+        </property>
         <property name="text">
          <string>D.O.B</string>
         </property>
@@ -187,6 +209,9 @@
      <layout class="QHBoxLayout" name="horizontalLayout_14">
       <item>
        <widget class="QLabel" name="label_14">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 46, 110);</string>
+        </property>
         <property name="text">
          <string>Identification</string>
         </property>
@@ -217,6 +242,9 @@
      <layout class="QHBoxLayout" name="horizontalLayout_12">
       <item>
        <widget class="QLabel" name="label_13">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 46, 110);</string>
+        </property>
         <property name="text">
          <string>NHI Number</string>
         </property>
@@ -247,6 +275,9 @@
      <layout class="QHBoxLayout" name="horizontalLayout_13">
       <item>
        <widget class="QLabel" name="label_12">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 46, 110);</string>
+        </property>
         <property name="text">
          <string>First Dose</string>
         </property>
@@ -274,6 +305,9 @@
      <layout class="QHBoxLayout" name="horizontalLayout_9">
       <item>
        <widget class="QLabel" name="label_10">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 46, 110);</string>
+        </property>
         <property name="text">
          <string>Second Dose</string>
         </property>
@@ -301,6 +335,9 @@
      <layout class="QHBoxLayout" name="horizontalLayout_10">
       <item>
        <widget class="QLabel" name="label_11">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 46, 110);</string>
+        </property>
         <property name="text">
          <string>Terms And Conditions</string>
         </property>
@@ -334,6 +371,9 @@
      <width>141</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(83, 84, 85);</string>
    </property>
    <property name="text">
     <string>Already have an account?</string>

@@ -19,6 +19,9 @@
   <property name="windowTitle">
    <string>Contact Us</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(241, 248, 253);</string>
+  </property>
   <widget class="QLabel" name="label_ContactUs">
    <property name="geometry">
     <rect>
@@ -33,6 +36,10 @@
      <pointsize>12</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);
+background-color: rgb(241, 248, 253);</string>
+   </property>
    <property name="text">
     <string>Contact Us</string>
    </property>
@@ -46,6 +53,10 @@
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);
+background-color: rgb(241, 248, 253);</string>
+   </property>
    <property name="text">
     <string>Call us on 0800 222 478</string>
    </property>
@@ -58,6 +69,10 @@
      <width>261</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);
+background-color: rgb(241, 248, 253);</string>
    </property>
    <property name="text">
     <string>Email us at help@mycovidrecord.min.health.nz</string>
@@ -84,6 +99,10 @@
    <property name="autoFillBackground">
     <bool>false</bool>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);
+background-color: rgb(241, 248, 253);</string>
+   </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
    </property>
@@ -100,6 +119,9 @@
      <width>80</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);</string>
    </property>
    <property name="text">
     <string>Back</string>

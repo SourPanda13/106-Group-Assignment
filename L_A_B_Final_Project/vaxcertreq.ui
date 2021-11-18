@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Vaccine Certificate Request Successful</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(241, 248, 253);</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -21,6 +24,9 @@
      <width>331</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);</string>
    </property>
    <property name="text">
     <string>Your request for a vaccination certificate has been submitted.

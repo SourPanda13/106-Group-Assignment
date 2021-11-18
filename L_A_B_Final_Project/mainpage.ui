@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Your Records</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(241, 248, 253);</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -26,6 +29,9 @@
     <font>
      <pointsize>20</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);</string>
    </property>
    <property name="text">
     <string>My Covid-19 Record</string>
@@ -44,6 +50,9 @@
     <font>
      <pointsize>20</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);</string>
    </property>
    <property name="text">
     <string>Covid-19 Vaccination Record</string>
@@ -66,8 +75,8 @@
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Pfizer BioNtech&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Dose 1 - &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#002e6e;&quot;&gt;Pfizer BioNtech&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#002e6e;&quot;&gt;Dose 1 - &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="overwriteMode">
     <bool>false</bool>
@@ -90,8 +99,8 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Pfizer BioNtech&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Dose 2 - &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#002e6e;&quot;&gt;Pfizer BioNtech&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#002e6e;&quot;&gt;Dose 2 - &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextEdit" name="NeedHelpText">
@@ -111,9 +120,9 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Need Help?&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;docs-internal-guid-6b0cc7e9-7fff-2bb7-b5ce-cff9e8ae04b8&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Arial'; font-size:10pt; color:#000000; background-color:transparent;&quot;&gt;I&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:10pt; color:#000000; background-color:transparent;&quot;&gt;f you think you have incorrect vaccine information or would like to report a problem please press the report button or call our Help Centre on 0800 838383&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#002e6e;&quot;&gt;Need Help?&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;docs-internal-guid-6b0cc7e9-7fff-2bb7-b5ce-cff9e8ae04b8&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Arial'; font-size:10pt; color:#002e6e; background-color:transparent;&quot;&gt;I&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; font-size:10pt; color:#002e6e; background-color:transparent;&quot;&gt;f you think you have incorrect vaccine information or would like to report a problem please press the report button or call our Help Centre on 0800 838383&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; color:#002e6e;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QWidget" name="verticalLayoutWidget">
@@ -133,6 +142,9 @@ p, li { white-space: pre-wrap; }
         <pointsize>16</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 46, 110);</string>
+      </property>
       <property name="text">
        <string>View QR Code</string>
       </property>
@@ -144,6 +156,9 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>16</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 46, 110);</string>
       </property>
       <property name="text">
        <string>Book my Covid-19 Vaccination</string>
@@ -157,6 +172,9 @@ p, li { white-space: pre-wrap; }
         <pointsize>16</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 46, 110);</string>
+      </property>
       <property name="text">
        <string>Get a Covid-19 Test</string>
       </property>
@@ -168,6 +186,9 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>16</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 46, 110);</string>
       </property>
       <property name="text">
        <string>Enter Covid-19 Test Results </string>
@@ -181,6 +202,9 @@ p, li { white-space: pre-wrap; }
         <pointsize>16</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 46, 110);</string>
+      </property>
       <property name="text">
        <string>Veiw Test Results</string>
       </property>
@@ -192,6 +216,9 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>16</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 46, 110);</string>
       </property>
       <property name="text">
        <string>View My Account Details</string>
@@ -205,6 +232,9 @@ p, li { white-space: pre-wrap; }
         <pointsize>16</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 46, 110);</string>
+      </property>
       <property name="text">
        <string>Request a Digital Vaccine Certificate</string>
       </property>
@@ -216,6 +246,9 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>16</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 46, 110);</string>
       </property>
       <property name="text">
        <string>Report an issue</string>
@@ -263,8 +296,8 @@ p, li { white-space: pre-wrap; }
   <widget class="QPushButton" name="LogOut">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>570</y>
+     <x>820</x>
+     <y>520</y>
      <width>111</width>
      <height>31</height>
     </rect>
@@ -273,6 +306,9 @@ p, li { white-space: pre-wrap; }
     <font>
      <pointsize>14</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 46, 110);</string>
    </property>
    <property name="text">
     <string>Log Out</string>
