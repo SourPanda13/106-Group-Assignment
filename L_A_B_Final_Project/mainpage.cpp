@@ -1,7 +1,11 @@
 #include "mainpage.h"
 #include "ui_mainpage.h"
-#include <login.cpp>
 #include <mainwindow.h>
+
+#include <QMessageBox>
+#include <QFile>
+#include <QTextStream>
+#include <QString>
 
 
 MainPage::MainPage(QWidget *parent) :

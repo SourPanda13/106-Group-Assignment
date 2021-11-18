@@ -1,5 +1,5 @@
 #include "testview.h"
-#include "ui_TestView.h"
+#include "ui_testview.h"
 #include <QFile>
 
 TestView::TestView(QWidget *parent) :
