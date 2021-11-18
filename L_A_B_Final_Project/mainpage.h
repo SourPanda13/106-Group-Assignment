@@ -35,8 +35,6 @@ private slots:
      void on_ViewAccountDetails_clicked();
      void on_RequestDigitalVaccineCertificate_2_clicked();
 
-     void on_GetATest_2_clicked();
-
      void on_RequestDigitalVaccineCertificate_3_clicked();
 
      void on_NHIQRCodeDisplay_clicked();

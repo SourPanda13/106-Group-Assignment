@@ -10,6 +10,7 @@
 #include <adminhome.h>
 #include <adminaccountdetails.h>
 #include <testview.h>
+#include <testinput.h>
 
 Adminmainpage::Adminmainpage(QWidget *parent) :
     QDialog(parent),
@@ -392,4 +393,12 @@ void Adminmainpage::on_NHIQRCodeDisplay_clicked()
 
 
 
+
+
+void Adminmainpage::on_GetATest_3_clicked()
+{
+    TestInput *ti;
+    ti = new TestInput(this);
+    ti->show();
+}
 

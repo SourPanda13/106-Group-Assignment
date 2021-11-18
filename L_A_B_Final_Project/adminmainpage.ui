@@ -201,7 +201,7 @@ background-color: rgb(241, 248, 253);</string>
      <x>30</x>
      <y>290</y>
      <width>181</width>
-     <height>151</height>
+     <height>161</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -237,6 +237,21 @@ background-color: rgb(241, 248, 253);</string>
     </item>
     <item>
      <widget class="QPushButton" name="GetATest">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 46, 110);</string>
+      </property>
+      <property name="text">
+       <string>View Test History</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="GetATest_3">
       <property name="font">
        <font>
         <pointsize>12</pointsize>

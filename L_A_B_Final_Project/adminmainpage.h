@@ -30,6 +30,8 @@ private slots:
 
     void on_NHIQRCodeDisplay_clicked();
 
+    void on_GetATest_3_clicked();
+
 private:
     Ui::Adminmainpage *ui;
 };

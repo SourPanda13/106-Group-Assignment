@@ -181,21 +181,6 @@ p, li { white-space: pre-wrap; }
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="GetATest_2">
-      <property name="font">
-       <font>
-        <pointsize>16</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(0, 46, 110);</string>
-      </property>
-      <property name="text">
-       <string>Enter Covid-19 Test Results </string>
-      </property>
-     </widget>
-    </item>
-    <item>
      <widget class="QPushButton" name="RequestDigitalVaccineCertificate_3">
       <property name="font">
        <font>
