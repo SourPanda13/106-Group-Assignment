@@ -1,3 +1,4 @@
+//Library and Header Files
 #include "login.h"
 #include "ui_login.h"
 
@@ -5,6 +6,8 @@
 #include <QFile>
 #include <QTextStream>
 #include <QString>
+
+//Window that allows users and admin to login to their accounts
 
 login::login(QWidget *parent) :
     QMainWindow(parent),
@@ -18,18 +21,7 @@ login::~login()
     delete ui;
 }
 
-User::User(QString username,QString pass, QString name, QString dob, QString id, QString nhi, int vax_no)
-{
-    this->username=username;
-    this->password=pass;
-    this->name=name;
-    this->dob=dob;
-    this->id=id;
-    this->nhi=nhi;
-    this->no_of_vax=vax_no;
-}
-
-
+//Gets username/email and password as inputs and checks the user file for any matches
 void login::on_pushButton_clicked()
 {
 
@@ -48,6 +40,7 @@ void login::on_pushButton_clicked()
         QString line = in.readLine();
         QStringList data= line.split(",");
 
+        //If the admin login credentials are inputted then it opens the admin home screen
         if(username=="admin123" && password == "login321")
         {
             QMessageBox::information(this,"Success","Succesfully logged in as Admin");
@@ -57,9 +50,9 @@ void login::on_pushButton_clicked()
             ah->show();
             break;
         }
+        //If a match is found then it adds their information to the current user file and opens the users main page
         else if(username==data.at(0) && password==data.at(1))
         {
-            User user(QString (data.at(0)),QString (data.at(1)),QString (data.at(2)),QString (data.at(3)),QString (data.at(4)),QString (data.at(5)), data.at(6).toInt());
             QMessageBox::information(this,"Success","Succesfully logged in");
             
             QFile userFile("current_user.txt");
@@ -76,6 +69,7 @@ void login::on_pushButton_clicked()
             break;
         }
      }
+    //Failed login
     if (!flag)
     {
         QMessageBox::critical(this,"Login Failed","Incorrect Username or Password");

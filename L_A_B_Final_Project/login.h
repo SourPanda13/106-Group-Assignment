@@ -28,17 +28,5 @@ private:
     AdminHome *ah;
 };
 
-class User
-{
-    QString username;
-    QString password;
-    QString name;
-    QString dob;
-    QString id;
-    QString nhi;
-    int no_of_vax;
-public:
-    User(QString, QString, QString, QString, QString, QString, int);
-};
 
 #endif // LOGIN_H

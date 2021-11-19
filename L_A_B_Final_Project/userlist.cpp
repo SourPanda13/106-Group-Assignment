@@ -1,3 +1,4 @@
+//Library and Header Files
 #include "userlist.h"
 #include "ui_userlist.h"
 #include <QFile>
@@ -5,12 +6,15 @@
 #include <QString>
 #include <QMessageBox>
 
+//Window that allows admin to pick a user to view/edit
+
 UserList::UserList(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::UserList)
 {
     ui->setupUi(this);
 
+    //Adds all user emails to the combo-box
     QFile userFile("user.txt");
     userFile.open(QIODevice::ReadOnly | QIODevice::Text);
     QTextStream in(&userFile);
@@ -30,6 +34,7 @@ UserList::~UserList()
     delete ui;
 }
 
+//Takes email from combo-box and goes to admin main page with the users info stored i the current user file
 void UserList::on_pushButton_clicked()
 {
 

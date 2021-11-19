@@ -1,5 +1,8 @@
+//Library and Header Files
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+
+//The initial landing screen
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -13,7 +16,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
+//Opens window for users to sign up
 void MainWindow::on_pushButton_Signup_clicked()
 {
     hide();
@@ -22,7 +25,7 @@ void MainWindow::on_pushButton_Signup_clicked()
 
 }
 
-
+//Opens window for users to log in
 void MainWindow::on_pushButton_Login_clicked()
 {
     hide();

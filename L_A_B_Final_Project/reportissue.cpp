@@ -1,9 +1,12 @@
+//Library and Header Files
 #include "reportissue.h"
 #include "ui_reportissue.h"
 #include <mainpage.h>
 #include <QFile>
 #include <QMessageBox>
 #include <QDateTime>
+
+//Window that allows users to send a report to the admin
 
 ReportIssue::ReportIssue(QWidget *parent) :
     QDialog(parent),
@@ -17,9 +20,7 @@ ReportIssue::~ReportIssue()
     delete ui;
 }
 
-
-
-
+//Returns user to main user page
 void ReportIssue::on_pushButton_back_clicked()
 {
     MainPage *mp;
@@ -28,7 +29,7 @@ void ReportIssue::on_pushButton_back_clicked()
     mp->show();
 }
 
-
+//Saves the report to a file and adds their email to it
 void ReportIssue::on_pushButton_submit_clicked()
 {
 

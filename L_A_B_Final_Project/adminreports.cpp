@@ -1,3 +1,4 @@
+//Library and Header Files
 #include "adminreports.h"
 #include "ui_adminreports.h"
 #include <adminhome.h>
@@ -5,12 +6,15 @@
 #include <QTextStream>
 #include <QString>
 
+//Window that displays the user issue reports
+
 AdminReports::AdminReports(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::AdminReports)
 {
     ui->setupUi(this);
 
+    //Add emails of users with reports to the combo-box
     QFile reportFile("reports.txt");
     reportFile.open(QIODevice::ReadOnly | QIODevice::Text);
     QTextStream in(&reportFile);
@@ -30,6 +34,7 @@ AdminReports::~AdminReports()
     delete ui;
 }
 
+//Return to the Admin home page
 void AdminReports::on_pushButton_clicked()
 {
     AdminHome *ah;
@@ -38,7 +43,7 @@ void AdminReports::on_pushButton_clicked()
     ah->show();
 }
 
-
+//Use the combo-box email to find the users report and display
 void AdminReports::on_pushButton_2_clicked()
 {
     QFile reportFile("reports.txt");

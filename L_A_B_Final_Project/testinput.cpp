@@ -1,3 +1,4 @@
+//Library and Header Files
 #include "testinput.h"
 #include "ui_testinput.h"
 
@@ -5,6 +6,8 @@
 #include<QMessageBox>
 #include<QString>
 #include<QDateTime>
+
+//Window that allows admin to enter the Covid test results of a user
 
 TestInput::TestInput(QWidget *parent) :
     QDialog(parent),
@@ -18,7 +21,7 @@ TestInput::~TestInput()
     delete ui;
 }
 
-
+//Takes test result input from the admin and stores it in the test file
 void TestInput::on_buttonBox_accepted()
 {
     QFile currentUserFile("current_user.txt");

@@ -1,5 +1,8 @@
+//Library and Header Files
 #include "bookvax.h"
 #include "ui_bookvax.h"
+
+//Window that displays a qr code for users to book a vaccination
 
 BookVax::BookVax(QWidget *parent) :
     QDialog(parent),
@@ -7,6 +10,7 @@ BookVax::BookVax(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    //Displays QR Code
     QPixmap img(":/QRC/QR Code/Book vax.png");
     ui->label->setPixmap(img);
     int w = ui->label->width();

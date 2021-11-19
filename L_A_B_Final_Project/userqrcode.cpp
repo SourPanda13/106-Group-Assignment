@@ -1,7 +1,10 @@
+//Library and Header Files
 #include "userqrcode.h"
 #include "ui_userqrcode.h"
 #include <QFile>
 #include <QDir>
+
+//Window that displays user qr code
 
 UserQRCode::UserQRCode(QWidget *parent) :
     QDialog(parent),
@@ -9,6 +12,7 @@ UserQRCode::UserQRCode(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    //Displays the QR Code using the file path in the user file
     QFile userFile("current_user.txt");
     userFile.open(QIODevice::ReadOnly | QIODevice::Text);
     QTextStream in(&userFile);

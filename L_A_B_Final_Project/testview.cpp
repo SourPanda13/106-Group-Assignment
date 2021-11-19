@@ -1,6 +1,9 @@
+//Library and Header Files
 #include "testview.h"
 #include "ui_testview.h"
 #include <QFile>
+
+//Window that displays a users test results
 
 TestView::TestView(QWidget *parent) :
     QDialog(parent),
@@ -8,6 +11,7 @@ TestView::TestView(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    //Displays all of the user's tests in the test file
     QFile CurrentUserFile("current_user.txt");
     CurrentUserFile.open(QIODevice::ReadOnly | QIODevice::Text);
     QTextStream in(&CurrentUserFile);

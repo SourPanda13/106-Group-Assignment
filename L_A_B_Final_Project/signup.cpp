@@ -1,3 +1,4 @@
+//Library and Header Files
 #include "signup.h"
 #include "ui_signup.h"
 
@@ -5,6 +6,8 @@
 #include <QTextStream>
 #include <QString>
 #include <QMessageBox>
+
+//Window for users to enter their information and create an account
 
 SignUp::SignUp(QWidget *parent) :
     QMainWindow(parent),
@@ -19,7 +22,7 @@ SignUp::~SignUp()
 }
 
 
-
+//Go to login screen
 void SignUp::on_pushButton_2_clicked()
 {
     hide();
@@ -27,7 +30,7 @@ void SignUp::on_pushButton_2_clicked()
     li->show();
 }
 
-
+//If there are no errors takes inputted information and adds it to the user file
 void SignUp::on_pushButton_clicked()
 {
     if(ui->checkBox_tc->isChecked())

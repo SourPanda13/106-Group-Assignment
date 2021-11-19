@@ -1,3 +1,4 @@
+//Library and Header Files
 #include "adminmainpage.h"
 #include "ui_adminmainpage.h"
 #include <mainwindow.h>
@@ -12,12 +13,16 @@
 #include <testview.h>
 #include <testinput.h>
 
+//Main admin page after selecting a user
+
 Adminmainpage::Adminmainpage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Adminmainpage)
 {
     ui->setupUi(this);
 
+
+    //Get user data from file and display
     QFile userFile("current_user.txt");
     userFile.open(QIODevice::ReadOnly | QIODevice::Text);
     QTextStream in(&userFile);
@@ -45,6 +50,7 @@ Adminmainpage::Adminmainpage(QWidget *parent) :
         ui->pushButton_2->hide();
     }
 
+    //Displays QR code if there is one
     QDir pathDir("./images");
     if(!pathDir.exists())
     {
@@ -67,6 +73,7 @@ Adminmainpage::~Adminmainpage()
     delete ui;
 }
 
+//Returns to start of application
 void Adminmainpage::on_LogOut_2_clicked()
 {
     this->hide();
@@ -75,10 +82,11 @@ void Adminmainpage::on_LogOut_2_clicked()
     mw->show();
 }
 
-
+//Deletes the account
 void Adminmainpage::on_GetATest_2_clicked()
 {
 
+    //Gets current users email
     QFile currentUserFile("current_user.txt");
     currentUserFile.open(QIODevice::ReadOnly | QIODevice::Text);
     QTextStream in(&currentUserFile);
@@ -88,6 +96,7 @@ void Adminmainpage::on_GetATest_2_clicked()
 
     QString account = data.at(0);
 
+    //Uses the email to find the users location in the user file and removes it
     QFile userFile("user.txt");
     if(userFile.open(QIODevice::ReadWrite | QIODevice::Text))
     {
@@ -106,6 +115,7 @@ void Adminmainpage::on_GetATest_2_clicked()
 
     QMessageBox::information(this,"Deleted","This account has been successfully deleted.");
 
+    //Return to the admin home screen
     AdminHome *ah;
     ah = new AdminHome(this);
     this->hide();
@@ -113,7 +123,7 @@ void Adminmainpage::on_GetATest_2_clicked()
 
 }
 
-
+//Displays the editable user information window
 void Adminmainpage::on_BookVaccination_clicked()
 {
     AdminAccountDetails *aad;
@@ -122,7 +132,7 @@ void Adminmainpage::on_BookVaccination_clicked()
     aad->show();
 }
 
-
+//Updates user file to show the user has had 1st dose
 void Adminmainpage::on_pushButton_clicked()
 {
     QFile currentUserFile("current_user.txt");
@@ -204,7 +214,7 @@ void Adminmainpage::on_pushButton_clicked()
 
 }
 
-
+//Updates user file to show the user has had 2nd dose
 void Adminmainpage::on_pushButton_2_clicked()
 {
     QFile currentUserFile("current_user.txt");
@@ -286,6 +296,7 @@ void Adminmainpage::on_pushButton_2_clicked()
 
 }
 
+//Displays test view window
 void Adminmainpage::on_GetATest_clicked()
 {
     TestView *tw;
@@ -293,7 +304,7 @@ void Adminmainpage::on_GetATest_clicked()
     tw->show();
 }
 
-
+//Allows admin to add a qr code image and then store the file path to the user file
 void Adminmainpage::on_NHIQRCodeDisplay_clicked()
 {
     QString imageFilePath = "none.png";
@@ -391,10 +402,7 @@ void Adminmainpage::on_NHIQRCodeDisplay_clicked()
     FileOut<<file;
 }
 
-
-
-
-
+//Display window to input user test results
 void Adminmainpage::on_GetATest_3_clicked()
 {
     TestInput *ti;
